@@ -21,11 +21,15 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="data">Data:</label>
-      <input type="text" id="data" value={data} onChange={handleChange} />
-      <button type="submit">Submit</button>
-    </form>
+    <div className=" container-fluid ">
+      <div className=" border-r-indigo-700 col-start-2 ">
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="data">Data:</label>
+          <input type="text" id="data" value={data} onChange={handleChange} />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   );
 };
 
